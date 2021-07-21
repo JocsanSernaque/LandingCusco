@@ -1,0 +1,108 @@
+/* By @Jocsan.dev */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@500&family=Poppins:wght@100;400&display=swap');
+
+:root{
+    --color_one: #fff;
+    --color_two: rgb(0, 0, 0);
+    --glass__box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    --glass__background: rgba(255,255,255,0.07);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    max-width: 1440px;
+    color: var(--color_one);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+header{
+    height: 100vh;
+    background-image: url(../img/machupicchu-6022493_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;    
+}
+nav span{
+    padding: 40px;    
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive;
+    color: var(--color_two);
+    
+}
+.welcome{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 28%;
+    left: 10%;
+}
+.welcome h3{ font-size: 3rem;}
+
+.welcome h1{
+    font-size: 6rem;
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    padding-top: 1rem;    
+    letter-spacing: 3px;    
+}
+.welcome span{
+    text-align: right;
+    background: var(--color_one);
+    color: var(--color_two);
+    padding-right: 10px;
+    
+}
+header .welcome a{
+    margin-top: 20px ;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;    
+    color: var(--color_one);
+    background: rgb(123,146, 25);
+    width: 150px;    
+    padding: 15px 30px;
+    border: 2px solid var(--color_one);
+    border-radius: 10px;
+}
+
+header .welcome a:hover{
+    background: var(--color_one);
+    color: rgb(123,146, 25);
+    transition: all 0.5s;
+}
+
+.images{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 30px;
+    right: 150px;    
+}
+.images figure{    
+    width: 250px;    
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;    
+    box-shadow: var(--glass__box-shadow);
+    background-color: var(--glass__background);
+    backdrop-filter: blur(1px);
+    cursor: pointer;
+}
+
+.images figure img{
+    width: 100%;    
+    padding: 15px;
+    border-radius: 20px;
+}
